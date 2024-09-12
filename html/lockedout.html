@@ -82,21 +82,19 @@
     </style>
 </head>
 <body>
-<div class="MiniProgram">
-    <p><img class="MP" src="../images/memix_skeptical_dog.png"></p>
-</div>
+<div class="meme_figure"> <p><img class="MP" src="../images/memix_skeptical_dog.png"></p> </div>
     <div class="overlay">
         <h1>Contact Me</h1>
         <p>Seriously, don’t knock on my window unless you’re delivering pizza or a million dollars!</p>
 
-        <form>
+        <form id="contactForm">
             <label for="name">Full Name:</label>
             <input type="text" id="name" name="name" required>
 
             <label for="room">Room Number:</label>
             <input type="number" id="room" name="room" required>
 
-            <button type="submit" class="btn" onclick="showPhoneNumber()">Submit</button>
+            <button type="submit" class="btn">Submit</button>
         </form>
         
         <p id="phone"></p>
@@ -107,8 +105,18 @@
     <script>
         function showPhoneNumber() {
             event.preventDefault();
-            document.getElementById("phone").innerHTML = "Locked out? Just text me your name, room number, and what’s going on, and I’ll get back to you ASAP. My phone number is: <strong>219-402-0422</strong>. Please don’t call or knock on my window—I won’t answer and it’ll just make me mad.";
+            
+            var roomNumber = document.getElementById("room").value;
+            var validRooms = [101, 102, 103, 104, 201, 202, 203, 204, 301, 302, 303, 304];
+            
+            if (validRooms.includes(parseInt(roomNumber))) {
+                document.getElementById("phone").innerHTML = "Locked out? Just text me your name, room number, and what’s going on, and I’ll get back to you ASAP. My phone number is: <strong>219-402-0422</strong>. Please don’t call or knock on my window—I won’t answer and it’ll just make me mad.";
+            } else {
+                document.getElementById("phone").innerHTML = "Nice try, but I can tell you're not a local. Sorry, I can't help you out. You'll need to call someone you know who lives here!";
+            }
         }
+
+        document.getElementById("contactForm").addEventListener("submit", showPhoneNumber);
     </script>
 
 </body>
