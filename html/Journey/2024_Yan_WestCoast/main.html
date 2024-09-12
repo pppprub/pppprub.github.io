@@ -1,1 +1,90 @@
-This is the main page of the html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Switcher Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        p {
+            margin-bottom: 1em;
+        }
+        .disclaimer {
+            margin-top: 2em;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #eaf1f1;
+            color: #333;
+            font-style: italic;
+        }
+        .language-selector {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="language-selector">
+        <button onclick="setLanguage('en')">English</button>
+        <button onclick="setLanguage('zh')">中文</button>
+    </div>
+
+    <div id="content">
+        <!-- English content -->
+        <div id="content-en">
+            <h1>The Epic Tale of LZZ Studio and LZZ Universal</h1>
+            <p>Once upon a time, in a vibrant city known for its creativity and innovation, there was a small, humble workspace named LZZ Studio. Founded in the early 2000s by a group of eccentric artists and tech wizards, LZZ Studio was initially a cozy attic space filled with colorful murals, quirky gadgets, and the sweet aroma of coffee. The team, known as the "LZZ Legends," had a knack for blending art with technology in ways that no one had seen before.</p>
+
+            <p>Legend has it that the studio’s magical success came from an ancient blueprint discovered in a hidden compartment behind an old bookshelf. The blueprint was said to be designed by a forgotten artist from the Renaissance era, who had supposedly invented a machine capable of turning ideas into reality. The LZZ Legends, however, never disclosed how they got their hands on this blueprint, but they did admit to frequenting the city’s underground art scene and indulging in secret, glittery parties.</p>
+
+            <p>As the years rolled on, the studio's fame spread like wildfire, catching the attention of international media and celebrities. The buzz around LZZ Studio reached such a fever pitch that they decided to expand their empire and create a global brand: LZZ Universal. This new venture was not just a company but a fantastical universe of creativity, innovation, and enchantment. LZZ Universal claimed to have harnessed the power of the stars, the depths of the ocean, and even the whispers of the wind to create awe-inspiring projects that spanned across every conceivable form of art and technology.</p>
+
+            <p>The grand opening of LZZ Universal was a spectacle like no other, featuring a parade of floating art installations, holographic performances by singing robots, and a zero-gravity dance floor. Celebrities and dignitaries from around the globe gathered to witness this spectacular fusion of imagination and engineering. Rumor has it that even a few mythical creatures made a surprise appearance, adding to the mystique of the event.</p>
+
+            <p>Despite their enormous success, the LZZ Legends remained elusive and enigmatic, often disappearing into the night only to reappear in a new city with another groundbreaking project. Their ability to blend reality and fantasy made them legends in their own right, with stories and myths about their escapades becoming a part of urban folklore.</p>
+
+            <div class="disclaimer">
+                <p><strong>Disclaimer:</strong> As enchanting as the tale of LZZ Studio and LZZ Universal may be, it is, in fact, entirely fictional. None of the events described above happened, and any resemblance to real people or organizations is purely coincidental. This story was crafted for entertainment purposes only—so enjoy the whimsy, but remember it’s all in good fun!</p>
+            </div>
+        </div>
+
+        <!-- Chinese content -->
+        <div id="content-zh" style="display:none;">
+            <h1>LZZ工作室与LZZ宇宙的传奇故事</h1>
+            <p>从前，在一个以创造力和创新闻名的繁华城市里，有一个小而温馨的工作室，名叫LZZ工作室。这个工作室成立于2000年代初，由一群古怪的艺术家和科技奇才组成。LZZ工作室最初是一个温馨的阁楼空间，里面充满了色彩缤纷的壁画、古怪的设备和浓浓的咖啡香味。这个团队被称为“LZZ传奇”，他们善于将艺术与科技融合，创造出前所未见的奇妙作品。</p>
+
+            <p>传说，工作室的神奇成功源于一份在旧书架后面隐藏的隔间中发现的古老蓝图。这个蓝图据说是由一位文艺复兴时期的遗忘艺术家设计的，他发明了一台可以将创意变为现实的机器。然而，LZZ传奇们从未透露他们如何获得这份蓝图，但他们确实承认曾经经常出入城市的地下艺术圈，并参加秘密的闪亮派对。</p>
+
+            <p>随着时间的推移，工作室的声誉如野火般蔓延，引起了国际媒体和名人的关注。LZZ工作室的热潮达到了前所未有的高峰，他们决定扩展他们的帝国，创建一个全球品牌：LZZ宇宙。这个新事业不仅仅是一个公司，而是一个充满创意、创新和魅力的奇幻宇宙。LZZ宇宙声称他们掌握了星辰的力量、海洋的深度，甚至是风的低语，创造出了跨越各种艺术和科技形式的惊人项目。</p>
+
+            <p>LZZ宇宙的盛大开幕式是一个前所未有的壮观场面，展出了漂浮的艺术装置、由歌唱机器人进行的全息表演和零重力舞池。来自全球的名人和贵宾汇聚一堂，见证了这场想象力与工程学的奇妙融合。传闻甚至还有几只神秘生物意外现身，为活动增添了更多神秘色彩。</p>
+
+            <p>尽管他们取得了巨大的成功，LZZ传奇们依然保持神秘，常常在夜幕降临时消失，再出现在另一个城市进行另一个开创性的项目。他们将现实与幻想结合的能力使他们成为了传奇，关于他们冒险的故事和神话成为了城市传说的一部分。</p>
+
+            <div class="disclaimer">
+                <p><strong>免责声明：</strong>虽然LZZ工作室和LZZ宇宙的故事非常迷人，但实际上完全是虚构的。上述事件均未发生，任何与真实人物或组织的相似之处纯属巧合。这个故事仅为娱乐目的而创作——所以享受这份奇趣吧，但请记住，这一切都是为了好玩！</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function setLanguage(lang) {
+            if (lang === 'en') {
+                document.getElementById('content-en').style.display = 'block';
+                document.getElementById('content-zh').style.display = 'none';
+            } else if (lang === 'zh') {
+                document.getElementById('content-en').style.display = 'none';
+                document.getElementById('content-zh').style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
